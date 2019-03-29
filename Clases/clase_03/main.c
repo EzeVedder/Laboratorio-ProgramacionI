@@ -12,9 +12,9 @@ int main()
 
     //utn_pruebita();
     //con el & le pase la direccion de memoria de la variable y no el numero
-    utn_getInt(&A,0,100,"Ingrese un numero: ","El numero ingresado no es valido.\n");
+    utn_getInt(&A,100,0,"Ingrese un numero: ","El numero ingresado no es valido.\n",3);
 
-    printf("%d",A);
+    printf("%d\n",A);
 
     return 0;
 }

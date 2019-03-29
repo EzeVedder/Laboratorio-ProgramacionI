@@ -1,11 +1,11 @@
 # depslib dependency file v1.0
-1553819548 source:/home/alumno/Descargas/workspace_c/Laboratorio-ProgramacionI/Clases/clase_03/main.c
+1553821452 source:/home/alumno/Descargas/workspace_c/Laboratorio-ProgramacionI/Clases/clase_03/main.c
 	<stdio.h>
 	<stdlib.h>
 	"utn.h"
 
-1553819607 source:/home/alumno/Descargas/workspace_c/Laboratorio-ProgramacionI/Clases/clase_03/utn.c
+1553821573 source:/home/alumno/Descargas/workspace_c/Laboratorio-ProgramacionI/Clases/clase_03/utn.c
 	<stdio.h>
 
-1553814201 /home/alumno/Descargas/workspace_c/Laboratorio-ProgramacionI/Clases/clase_03/utn.h
+1553821569 /home/alumno/Descargas/workspace_c/Laboratorio-ProgramacionI/Clases/clase_03/utn.h
 

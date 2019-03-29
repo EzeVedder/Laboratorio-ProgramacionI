@@ -2,7 +2,7 @@
 #define UTN_H_INCLUDED
 
 void utn_pruebita(void);
-int utn_getInt(int* pNumero,int maximo,int minimo,char* msg,char* msgError);
+int utn_getInt(int* pNumero,int maximo,int minimo,char* msg,char* msgError,int reintento);
 
 
 
