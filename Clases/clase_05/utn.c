@@ -60,5 +60,15 @@ int utn_getArrayInt(int* pNumeros,int MAX,const char* msg,const char* msgError,i
 }
 
 
+int utn_showArrayInt(int* pNumeros,int MAX)
+{
+    int i;
+
+    for(i=0;i<MAX;i++)
+    {
+        printf("%d\n",pNumeros[i]);
+    }
 
 
+    return 0;
+}
