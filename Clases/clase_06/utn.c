@@ -94,3 +94,36 @@ int utn_calcularMaximo(int* arreglo,int* pResultado,int MAX,char* msgError)
     return ret;
 }
 
+int utn_calcularMinimo(int* arreglo,int* pResultado,int MAX,char* msgError)
+{
+    int i;
+    int ret;
+    int buffer=arreglo[0];
+
+    for(i=0;i<MAX;i++)
+    {
+        if(arreglo[i]<buffer)
+        {
+            buffer = arreglo[i];
+        }
+        ret = 0;
+    }
+    *(pResultado) = buffer;
+    return ret;
+}
+
+int utn_calcularPromedio(int* arreglo,int* pResultado,int MAX,char* msgError)
+{
+    int i;
+    int ret;
+    int buffer=0;
+
+    for(i=0;i<MAX;i++)
+    {
+        buffer = arreglo[i]+buffer;
+        ret = 0;
+    }
+    *(pResultado) = buffer/MAX;
+
+    return ret;
+}
