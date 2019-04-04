@@ -10,6 +10,7 @@ int utn_getInt(int* pNumero,int maximo,int minimo,char* msg,char* msgError,int r
 {
     int num;
     int retorno=-1;
+    int reintentos = 1;
 
     while(reintento>0)
     {
@@ -28,9 +29,10 @@ int utn_getInt(int* pNumero,int maximo,int minimo,char* msg,char* msgError,int r
     {
         //MAL
         printf("%s",msgError);
-        printf("Llevas %d intento de tres\n",reintento);
+        printf("Llevas %d intento de tres\n",reintentos);
         retorno = -1;
     }
+    reintentos++;
     reintento--;
 
     *pNumero = num;
@@ -40,36 +42,23 @@ int utn_getInt(int* pNumero,int maximo,int minimo,char* msg,char* msgError,int r
 
 
 
-int utn_getArrayInt(int* pNumeros,int MAX,const char* msg,const char* msgError,int minimo,int maximo,int reintentos);
+int utn_getArrayInt(int* pNumeros,int MAX,const char* msg,const char* msgError,int minimo,int maximo,int reintentos)
 {
     int i;
-    int numero;
     int aux;
     int ret;
     for(i=0;i<MAX;i++)
     {
-        ret = utn_getInt(&aux,100,0,"Ingrese un numero: ")
+        ret = utn_getInt(&aux,100,0,"Ingrese un numero: ","Error.Reintente\n",3);
         if(ret)
         {
             break;
         }
-        *pNumeros+1 = aux;
+        *(pNumeros+1) = aux;
     }
     return ret;
 }
 
 
-int utn_showArrayInt(int* pNumero,int MAX)
-{
-    int numero;
-    int i;
-
-    for(i=0;i<MAX;i++)
-    {
-        printf("%d\n",array[i]);
-    }
-
-    return 0;
-}
 
 
