@@ -56,7 +56,7 @@ int utn_getArrayInt(int* pNumeros,int MAX,const char* msg,const char* msgError,i
         }
         *(pNumeros+i) = aux;
     }
-    return ret;
+    return 0;
 }
 
 

@@ -1,11 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "utn.h"
-#define LIMITE 5
+#define LIMITE 4
 
 int main()
 {
     int numeros[LIMITE];
+    //int arrayNumeros[4] = {5,34,3,1};
     int i;
     //int promedio;
 
@@ -15,5 +16,17 @@ int main()
     {
         printf("%d\n",numeros[i]);
     }
+
+
+
+
+
+
+
+
+
+
+
+
     return 0;
 }
