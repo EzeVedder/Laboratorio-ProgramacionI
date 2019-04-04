@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "utn.h"
-#define LIMIT 10
+#define LIMIT 3
 
 int main()
 {

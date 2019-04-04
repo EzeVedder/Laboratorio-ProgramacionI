@@ -79,19 +79,17 @@ int utn_calcularMaximo(int* arreglo,int* pResultado,int MAX,char* msgError)
 {
     int i;
     int ret;
-    int buffer;
+    int aux;
 
     for(i=0;i<MAX;i++)
     {
         if(arreglo[i]>arreglo[i+1])
         {
-            buffer = arreglo[i];
-            printf("%d",buffer);
-
+            aux = arreglo[i];
         }
+        ret = 0;
     }
-    *pResultado = buffer;
-    ret = 0;
+    *(pResultado) = aux;
 
     return ret;
 }
