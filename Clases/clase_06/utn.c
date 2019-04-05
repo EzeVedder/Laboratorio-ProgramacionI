@@ -127,3 +127,29 @@ int utn_calcularPromedio(int* arreglo,int* pResultado,int MAX,char* msgError)
 
     return ret;
 }
+
+
+int utn_buscarNumeroEnArray(int* arreglo,int* pResultado,int MAX,char* msgError)
+{
+    int i;
+    int ret;
+    int buffer = *pResultado;
+
+        for(i=0;i<MAX;i++)
+        {
+            if(arreglo[i]==buffer)
+            {
+                ret = 0;
+                break;
+            }
+            else
+            {
+                printf("%s",msgError);
+                ret = -1;
+            }
+        }
+
+    *(pResultado) = buffer;
+
+    return ret;
+}

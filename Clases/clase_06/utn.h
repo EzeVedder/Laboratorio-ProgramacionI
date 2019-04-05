@@ -8,7 +8,7 @@ int utn_showArrayInt(int* pNumeros,int MAX);
 int utn_calcularPromedio(int* arreglo,int* pResultado,int MAX,char* msgError);
 int utn_calcularMaximo(int* arreglo,int* pResultado,int MAX,char* msgError);
 int utn_calcularMinimo(int* arreglo,int* pResultado,int MAX,char* msgError);
-
+int utn_buscarNumeroEnArray(int* arreglo,int* pResultado,int MAX,char* msgError);
 
 
 
