@@ -132,14 +132,15 @@ int utn_calcularPromedio(int* arreglo,int* pResultado,int MAX,char* msgError)
 int utn_buscarNumeroEnArray(int* arreglo,int* pResultado,int MAX,char* msgError)
 {
     int i;
-    int ret;
-    int buffer = *pResultado;
+    int ret=-1;
+    int aux = *pResultado;
 
         for(i=0;i<MAX;i++)
         {
-            if(arreglo[i]==buffer)
+            if(arreglo[i]==aux)
             {
-                ret = 0;
+                printf("El numero se encuentra en el array.\n");
+                ret = i;
                 break;
             }
             else
@@ -148,8 +149,6 @@ int utn_buscarNumeroEnArray(int* arreglo,int* pResultado,int MAX,char* msgError)
                 ret = -1;
             }
         }
-
-    *(pResultado) = buffer;
 
     return ret;
 }
