@@ -10,7 +10,7 @@ int main()
     int maximo;
     int acumulador;
 
-    utn_getInt(&numero,"\nIngrese un numero: ","Error. Reintente");
+    utn_getInt(&numero,"\nIngrese un numero: ","Error. Reintente",0,200);
     //printf("%d",numero);
     minimo = numero;
     maximo = numero;
@@ -18,7 +18,7 @@ int main()
 
     for(i=0;i<4;i++)
     {
-        utn_getInt(&numero,"Ingrese un numero: ","Error. Reintente");
+        utn_getInt(&numero,"Ingrese un numero: ","Error. Reintente",0,200);
         if(numero<minimo)
         {
             minimo = numero;
