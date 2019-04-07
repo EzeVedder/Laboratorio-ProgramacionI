@@ -5,12 +5,12 @@
 int main()
 {
     int i;
-    int numero;
-    int minimo;
-    int maximo;
-    int acumulador;
+    float numero;
+    float minimo;
+    float maximo;
+    float acumulador;
 
-    utn_getInt(&numero,"\nIngrese un numero: ","Error. Reintente",0,200);
+    utn_getFloat(&numero,"\nIngrese un numero: ","Error. Reintente",0,200);
     //printf("%d",numero);
     minimo = numero;
     maximo = numero;
@@ -18,7 +18,7 @@ int main()
 
     for(i=0;i<4;i++)
     {
-        utn_getInt(&numero,"Ingrese un numero: ","Error. Reintente",0,200);
+        utn_getFloat(&numero,"Ingrese un numero: ","Error. Reintente",0,200);
         if(numero<minimo)
         {
             minimo = numero;
@@ -30,8 +30,8 @@ int main()
         acumulador = acumulador + numero;
     }
 
-printf("\nEl numero minimo es %d, el numero maximo es %d\n",minimo,maximo);
-printf("El promedio de los numeros ingresados es %d",acumulador/5);
+printf("\nEl numero minimo es %.2f, el numero maximo es %.2f\n",minimo,maximo);
+printf("El promedio de los numeros ingresados es %.2f",acumulador/5);
 
     return 0;
 }
