@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1554673270 source:/home/eze-ubuntu/Documentos/UTN/TSP/Laboratorio-ProgramacionI/Ejercicios/ejercicio_clase_02/main.c
+	<stdio.h>
+	<stdlib.h>
+	"utn_herramientas.h"
+
+1554672546 source:/home/eze-ubuntu/Documentos/UTN/TSP/Laboratorio-ProgramacionI/Ejercicios/ejercicio_clase_02/utn_herramientas.c
+	<stdio.h>
+	<stdlib.h>
+
+1554672245 /home/eze-ubuntu/Documentos/UTN/TSP/Laboratorio-ProgramacionI/Ejercicios/ejercicio_clase_02/utn_herramientas.h
+
