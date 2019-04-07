@@ -11,7 +11,7 @@ int main()
     int acumulador;
 
     utn_getInt(&numero,"\nIngrese un numero: ","Error. Reintente");
-    printf("%d",numero);
+    //printf("%d",numero);
     minimo = numero;
     maximo = numero;
     acumulador = numero;

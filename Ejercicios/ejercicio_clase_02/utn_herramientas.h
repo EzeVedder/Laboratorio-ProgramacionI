@@ -11,7 +11,14 @@
  */
 int utn_getInt(int *pNumero,char *msg,char *msgError);
 
-
+/** \brief Funcion que valida el numero ingresado sea un short int.
+ *
+ * \param pNumero int* puntero al numero ingresado.
+ * \param msgError char* mensaje de error mostrado al usuario.
+ * \return int retorna 0 si esta ok -1 si esta mal.
+ *
+ */
+int utn_validateInt(int *pNumero,char *msgError);
 
 
 #endif // UTN_HERRAMIENTAS_H_INCLUDED
