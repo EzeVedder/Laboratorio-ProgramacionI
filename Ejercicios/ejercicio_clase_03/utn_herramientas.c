@@ -66,9 +66,13 @@ int utn_getAreaCircle(float *pNumero,char *msg,char *msgError)
     int retorno;
     float numero;
 
-
-
-
-
-    return
+    printf("%s",msg);
+    scanf("%f",&numero);
+    if(!utn_validateFloat(&numero,"Error.Ingrese nuevamente.\n",0,200))
+    {
+        numero = 3.14 * numero * numero;
+        *pNumero = numero;
+        retorno = 0;
+    }
+    return retorno;
 }
