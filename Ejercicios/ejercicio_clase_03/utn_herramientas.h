@@ -24,11 +24,11 @@ int utn_getInt(int *pNumero,char *msg,char *msgError,int min,int max);
  */
 int utn_validateInt(int *pNumero,char *msgError,int min,int max);
 
-/** \brief Funcion que pide un numero de tipo float al usuario.
+/** \brief Funcion que valida el numero ingresado sea tipo float al usuario.
  *
  * \param pNumero float* puntero a float del numero.
  * \param msg char* mensaje mostrado al usuario.
- * \param msgError char* mensaje de error si el usuario no ingresa un entero.
+ * \param msgError char* mensaje de error.
  * \param float numero minimo valido.
  * \param float numero maximo valido.
  * \return int retorna 0 si esta ok -1 si esta mal.
