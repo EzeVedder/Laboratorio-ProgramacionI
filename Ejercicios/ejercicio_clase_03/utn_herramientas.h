@@ -48,12 +48,14 @@ int utn_validateFloat(float *pNumero,char *msgError,float min,float max);
  */
 int utn_getFloat(float *pNumero,char *msg,char *msgError,float min,float max);
 
-
-
-
-
-
-
+/** \brief Funcion que calcula el area de un circulo.
+ *
+ * \param pNumero float* radio del circulo, recibido como parametro.
+ * \param msg char* mensaje mostrado al usuario para pedir un numero.
+ * \param msgError char* mensaje de error para validar un rango.
+ * \return int retorna 0 si esta ok -1 si esta mal.s
+ *
+ */
 int utn_getAreaCircle(float *pNumero,char *msg,char *msgError);
 
 
