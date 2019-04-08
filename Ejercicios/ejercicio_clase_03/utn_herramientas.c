@@ -64,7 +64,7 @@ int utn_getFloat(float *pNumero,char *msg,char *msgError,float min,float max)
 int utn_getAreaCircle(float *pNumero,char *msg,char *msgError)
 {
     int retorno;
-    float numero;
+    float numero;//el numero recibido es el radio del circulo.
 
     printf("%s",msg);
     scanf("%f",&numero);
