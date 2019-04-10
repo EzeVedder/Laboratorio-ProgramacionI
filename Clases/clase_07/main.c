@@ -22,9 +22,9 @@ int getNumber(  int *pResultado,
 
 int main()
 {
-    //int numero;
+    int numero;
 
-
+    getNumber(&numero,"Ingrese numero: ","ERROR. REINTENTE\n",0,12,2);
 
 
     return 0;
@@ -58,9 +58,23 @@ int getString(  char *pResultado,
 
 int isValidNumber(char *cadena)
 {
+    int i;
+    int ret=0;
 
-
-    return 1;
+    if(cadena!=NULL)
+    {
+        while(cadena[i]!='\0')
+        {
+            if(cadena[i]<'0'||cadena[i]>'9')
+            {
+                break;
+            }
+            i++;
+        }
+        if(cadena[i]=='0')
+        ret=1;
+    }
+    return ret;
 }
 
 
