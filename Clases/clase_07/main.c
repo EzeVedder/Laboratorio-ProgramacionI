@@ -22,6 +22,10 @@ int getNumber(  int *pResultado,
 
 int main()
 {
+    //int numero;
+
+
+
 
     return 0;
 }
@@ -41,9 +45,12 @@ int getString(  char *pResultado,
                 int maximo,
                 int reintentos)
 {
+    char bufferStr[4096];
+    fgets(bufferStr,sizeof(bufferStr),stdin);// fgets ==>trae un string de un archivo sizeof ==>tamanio de bufferstr osea el maximo
+
+
 
     //NO HAY QUE COPIAR NUNCA ALGO DE MAS ====> PUEDE PERMITIR HACKING
-
     //strncpy(resultado,"1234",maximo) ===>DESTINO,ORIGEN,TAMANIO
     strncpy(pResultado,"1234",maximo);//1234 + \0 necesita un lugar mas para el \0 osea 5 lugares en el array
     return 0;
@@ -51,6 +58,7 @@ int getString(  char *pResultado,
 
 int isValidNumber(char *cadena)
 {
+
 
     return 1;
 }
@@ -82,12 +90,7 @@ int getNumber(  int *pResultado,
             }
         }
     }
-    else
-    {
-        //MAL
-    }
-
-
+    reintentos--;
 
     return retorno;
 }
