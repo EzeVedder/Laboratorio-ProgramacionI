@@ -47,7 +47,7 @@ int getString(  char *pResultado,
 {
     char bufferStr[4096];
     fgets(bufferStr,sizeof(bufferStr),stdin);// fgets ==>trae un string de un archivo sizeof ==>tamanio de bufferstr osea el maximo
-
+    bufferStr[strlen(bufferStr)-1] = '\0'; //strlen me devuelve el indice en donde esta el \0
 
 
     //NO HAY QUE COPIAR NUNCA ALGO DE MAS ====> PUEDE PERMITIR HACKING
