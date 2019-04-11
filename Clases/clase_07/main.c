@@ -25,8 +25,9 @@ int main()
 {
     int numero;
 
+    printf("Ingrese numero: ");
     getNumber(&numero,"Ingrese numero: ","ERROR. REINTENTE\n",0,12,2);
-    printf("%d",numero);
+    printf("%d",numero+1);
 
     return 0;
 }
@@ -40,13 +41,13 @@ int getString(  char *pResultado,
                 int reintentos)
 {
     char bufferStr[4096];
-    int ret;
+
     fgets(bufferStr,sizeof(bufferStr),stdin);// fgets ==>trae un string de un archivo sizeof ==>tamanio de bufferstr osea el maximo
     bufferStr[strlen(bufferStr)-1] = '\0'; //strlen me devuelve el indice en donde esta el \0
     if(strlen(bufferStr)>=minimo && strlen(bufferStr)<=maximo)
 
-    //NO HAY QUE COPIAR NUNCA ALGO DE MAS ====> PUEDE PERMITIR HACKING
-    //strncpy(resultado,"1234",maximo) ===>DESTINO,ORIGEN,TAMANIO
+                                                                            //NO HAY QUE COPIAR NUNCA ALGO DE MAS ====> PUEDE PERMITIR HACKING
+                                                                                //strncpy(resultado,"1234",maximo) ===>DESTINO,ORIGEN,TAMANIO
 
     //1234 + \0 necesita un lugar mas para el \0 osea 5 lugares en el array
     strncpy(pResultado,"1234",maximo);
@@ -55,10 +56,22 @@ int getString(  char *pResultado,
 
 int isValidNumber(char *cadena)
 {
-    int i;
-    int ret=0;
+    int i=0;
+    int ret=1;
 
-    if(cadena!=NULL)
+    if(cadena[i] =='-')
+    {
+        i++;
+    }
+    for(;cadena[i]!='\0';i++)//PERMITE RECORRER CUALQUIER STRING
+    {
+        if(cadena[i]<'0' || cadena[i]>'9')
+        {
+            ret = 0;
+            break;
+        }
+    }
+   /* if(cadena!=NULL)
     {
         while(cadena[i]!='\0')
         {
@@ -69,8 +82,8 @@ int isValidNumber(char *cadena)
             i++;
         }
         if(cadena[i]=='0')
-        ret=1;
-    }
+        ret=0;
+    }*/
     return ret;
 }
 
