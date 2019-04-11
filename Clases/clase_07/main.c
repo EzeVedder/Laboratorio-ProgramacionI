@@ -27,7 +27,7 @@ int main()
 
     printf("Ingrese numero: ");
     getNumber(&numero,"Ingrese numero: ","ERROR. REINTENTE\n",0,12,2);
-    printf("%d",numero+1);
+    printf("%d",numero);
 
     return 0;
 }

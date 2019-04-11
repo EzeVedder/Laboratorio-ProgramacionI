@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1555018657 source:/home/alumno/Descargas/workspace_c/Laboratorio-ProgramacionI/Clases/clase_08/funciones.c
+	<stdio.h>
+	<stdlib.h>
+	<stdio_ext.h>
+	"funciones.h"
+
+1554416454 /home/alumno/Descargas/workspace_c/Laboratorio-ProgramacionI/Clases/clase_08/funciones.h
+
+1555021726 source:/home/alumno/Descargas/workspace_c/Laboratorio-ProgramacionI/Clases/clase_08/main.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+	<stdio_ext.h>
+	<string.h>
+
