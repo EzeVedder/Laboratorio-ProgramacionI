@@ -31,13 +31,6 @@ int main()
 }
 
 
-
-
-
-
-
-
-
 int getString(  char *pResultado,
                 char *msg,
                 char *msgError,
@@ -48,6 +41,11 @@ int getString(  char *pResultado,
     char bufferStr[4096];
     fgets(bufferStr,sizeof(bufferStr),stdin);// fgets ==>trae un string de un archivo sizeof ==>tamanio de bufferstr osea el maximo
     bufferStr[strlen(bufferStr)-1] = '\0'; //strlen me devuelve el indice en donde esta el \0
+    if(strlen(bufferStr)>=minimo && strlen(bufferStr)<=maximo)
+    {
+        printf("OK");
+
+    }
 
 
     //NO HAY QUE COPIAR NUNCA ALGO DE MAS ====> PUEDE PERMITIR HACKING
