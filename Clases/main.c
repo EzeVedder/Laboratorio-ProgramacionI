@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "utn.h"
+#include <stdio_ext.h>
 #define LEN_LISTA    100
 
 int buscarIndiceLibreEnArray(char lista[][20],int tamanio,int *pIndice);// va a multiplicar el indice por 56
@@ -56,12 +57,14 @@ int main()
                     printf("se encontro lugar en %d\n",posLibre);
 
                 }
+                //__fpurge(stdin);
                 scanf("%s",nombres[i]);
                 i++;
                 break;
             }
             case 2:
             {
+                int i;
                 for(i=0;i<LEN_LISTA;i++)
                 {
                     printf("Nombre cargado : %s",nombres[i]);
