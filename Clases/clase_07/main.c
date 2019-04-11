@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <stdio_ext.h>
 
 
 int isValidNumber(char *cadena);
@@ -25,7 +26,7 @@ int main()
     int numero;
 
     getNumber(&numero,"Ingrese numero: ","ERROR. REINTENTE\n",0,12,2);
-
+    printf("%d",numero);
 
     return 0;
 }
@@ -39,18 +40,16 @@ int getString(  char *pResultado,
                 int reintentos)
 {
     char bufferStr[4096];
+    int ret;
     fgets(bufferStr,sizeof(bufferStr),stdin);// fgets ==>trae un string de un archivo sizeof ==>tamanio de bufferstr osea el maximo
     bufferStr[strlen(bufferStr)-1] = '\0'; //strlen me devuelve el indice en donde esta el \0
     if(strlen(bufferStr)>=minimo && strlen(bufferStr)<=maximo)
-    {
-        printf("OK");
-
-    }
-
 
     //NO HAY QUE COPIAR NUNCA ALGO DE MAS ====> PUEDE PERMITIR HACKING
     //strncpy(resultado,"1234",maximo) ===>DESTINO,ORIGEN,TAMANIO
-    strncpy(pResultado,"1234",maximo);//1234 + \0 necesita un lugar mas para el \0 osea 5 lugares en el array
+
+    //1234 + \0 necesita un lugar mas para el \0 osea 5 lugares en el array
+    strncpy(pResultado,"1234",maximo);
     return 0;
 }
 
@@ -101,8 +100,9 @@ int getNumber(  int *pResultado,
                 *pResultado = bufferInt;
             }
         }
+        reintentos--;
     }
-    reintentos--;
+
 
     return retorno;
 }

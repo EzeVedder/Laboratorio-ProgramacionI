@@ -1,6 +1,7 @@
 # depslib dependency file v1.0
-1554941428 source:/home/alumno/Descargas/workspace_c/Laboratorio-ProgramacionI/Clases/clase_07/main.c
+1554943164 source:/home/alumno/Descargas/workspace_c/Laboratorio-ProgramacionI/Clases/clase_07/main.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
+	<stdio_ext.h>
 
