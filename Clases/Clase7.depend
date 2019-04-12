@@ -3,10 +3,11 @@
 	<stdio.h>
 	<stdlib.h>
 
-1555026061 source:/home/alumno/Descargas/workspace_c/Laboratorio-ProgramacionI/Clases/main.c
+1555030398 source:/home/alumno/Descargas/workspace_c/Laboratorio-ProgramacionI/Clases/main.c
 	<stdio.h>
 	<stdlib.h>
 	"utn.h"
+	<string.h>
 	<stdio_ext.h>
 
 1555022183 /home/alumno/Descargas/workspace_c/Laboratorio-ProgramacionI/Clases/utn.h

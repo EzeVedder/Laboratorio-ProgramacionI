@@ -1,10 +1,16 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "utn.h"
+#include <string.h>
 #include <stdio_ext.h>
 #define LEN_LISTA    100
 
 int buscarIndiceLibreEnArray(char lista[][20],int tamanio,int *pIndice);// va a multiplicar el indice por 56
+int buscarNombreEnArray(char *pNombre,
+                        char lista[][20],
+                        int len,
+                        int *pIndex);
+
 
 int main()
 {
@@ -26,6 +32,8 @@ int main()
     */
     char nombres[LEN_LISTA][20];
     int i;
+    char buffer;
+    int posAeliminar;
     // Inicializacion
     for(i=0; i<LEN_LISTA; i++)
     {
@@ -41,7 +49,7 @@ int main()
     {
 
         utn_getNumber(&opcion,
-                      "1)ingresar\n2)listar\n",
+                      "1)ingresar\n2)listar\n4)Eliminar\n",
                       "NO!",
                       1,10,2);
 
@@ -55,11 +63,19 @@ int main()
                 if(buscarIndiceLibreEnArray(nombres,LEN_LISTA,&posLibre)==0)
                 {
                     printf("se encontro lugar en %d\n",posLibre);
+                    //utn_getString(buffer,"Ingrese: ","error",0,20,1);//guarda lo que pone el usuario osea los datos del nombre en buffer
+                    //nombres[posLibre] = buffer; ===>> esta mal porque es cadena de carcteres hay que usar la funcion strncpy
+                   fgets(buffer,20,stdin);
+                   buffer[strlen(buffer) - 1] = '\0';
+                   //printf("Se ingreso %s\n",buffer);
+                   //strncpy(nombres[posLibre],buffer,20);//ESTO ESTA BIEN
+                   i++;
 
                 }
                 //__fpurge(stdin);
+
                 scanf("%s",nombres[i]);
-                i++;
+
                 break;
             }
             case 2:
@@ -67,11 +83,17 @@ int main()
                 int i;
                 for(i=0;i<LEN_LISTA;i++)
                 {
-                    printf("Nombre cargado : %s",nombres[i]);
+                    printf("\nNombre cargado : %s",nombres[i]);
                     break;
                 }
             }
+            case 4:
+            {
+                fgets(buffer,20,stdin);
+                buscarNombreEnArray(buffer,nombres,LEN_LISTA,&posAeliminar);
+            }
         }
+        i++;
 
     }
 
@@ -93,6 +115,28 @@ int buscarIndiceLibreEnArray(char lista[][20],int tamanio,int *pIndice)
         {
             *pIndice = i;
             retorno = 0;
+            break;
+        }
+    }
+    return retorno;
+}
+
+
+
+int buscarNombreEnArray(char *pNombre,
+                        char lista[][20],
+                        int len,
+                        int *pIndex)
+{
+    int i;
+    int retorno=-1;
+
+    for(i=0;i<len;i++)
+    {
+        if(strcmp(pNombre,lista[i]==0))
+        {
+            *pIndex=i;
+            retorno =0;
             break;
         }
     }
