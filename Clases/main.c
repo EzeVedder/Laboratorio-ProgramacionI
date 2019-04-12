@@ -48,7 +48,7 @@ int main()
     while(1)
     {
 
-        utn_getNumber(&opcion,
+        getNumber(&opcion,
                       "1)ingresar\n2)listar\n4)Eliminar\n",
                       "NO!",
                       1,10,2);
@@ -63,12 +63,12 @@ int main()
                 if(buscarIndiceLibreEnArray(nombres,LEN_LISTA,&posLibre)==0)
                 {
                     printf("se encontro lugar en %d\n",posLibre);
-                    //utn_getString(buffer,"Ingrese: ","error",0,20,1);//guarda lo que pone el usuario osea los datos del nombre en buffer
+                    getString(&buffer,"Ingrese: ","error",1,20,1);//guarda lo que pone el usuario osea los datos del nombre en buffer
                     //nombres[posLibre] = buffer; ===>> esta mal porque es cadena de carcteres hay que usar la funcion strncpy
-                   fgets(buffer,20,stdin);
-                   buffer[strlen(buffer) - 1] = '\0';
-                   //printf("Se ingreso %s\n",buffer);
-                   //strncpy(nombres[posLibre],buffer,20);//ESTO ESTA BIEN
+                   //fgets(buffer,20,stdin);
+                   //buffer[strlen(buffer) - 1] = '\0';
+                   printf("Se ingreso %s\n",buffer);
+                   strncpy(nombres[posLibre],buffer,20);//ESTO ESTA BIEN
                    i++;
 
                 }
@@ -89,8 +89,8 @@ int main()
             }
             case 4:
             {
-                fgets(buffer,20,stdin);
                 buscarNombreEnArray(buffer,nombres,LEN_LISTA,&posAeliminar);
+                nombres[posAeliminar][0]=='\0';
             }
         }
         i++;
