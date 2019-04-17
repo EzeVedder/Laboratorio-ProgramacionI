@@ -71,7 +71,7 @@ typedef struct
     char apellido[50];
 
 }Empleado;//DECLARAR EN EMPLEADOS .H y en .C TODAS LAS FUNCIONES PARA ABM DE EMPLEADOS
-
+int inicializarEmpleados(Empleado* pEmpleado, int TAM);
 
 
 int main()
@@ -84,8 +84,8 @@ int main()
     printf("%.2f\n",auxiliar.peso);
 
     Empleado arrayEmpleados[LEN_LISTA];
-
-
+    //incializacion de array empleados utilizando estructuras
+    inicializarEmpleados(arrayEmpleados,LEN_LISTA);
 
     int opcion=0;
     char nombres[LEN_LISTA][20];
@@ -97,10 +97,6 @@ int main()
         nombres[i][0]='\0';
 
     //INICIALIZANDO ARRAY DE ESTRUCTURAS
-    for(i=0; i<LEN_LISTA;i++)
-    {
-        arrayEmpleados.isEmpty[i] = 1;
-    }
 
     //_______________________________
 
@@ -134,8 +130,8 @@ int main()
             {
                 for(i=0;i<10; i++)
                 {
-                    printf("-%d: %s\n",i,nombres[i]);
-                    //printf("-%d:",arrayEmpleados.isEmpty[i]);
+                    //printf("-%d: %s\n",i,nombres[i]);
+                    printf("%d:\n",arrayEmpleados[i].isEmpty);
                 }
                 break;
             }
@@ -162,4 +158,13 @@ int main()
 }
 
 
-
+int inicializarEmpleados(Empleado* pEmpleado, int TAM){
+    int i;
+    int retorno = -1;
+    if(TAM > 1 && pEmpleado != NULL){
+        for(i = 0; i < TAM; i++)
+            pEmpleado[i].isEmpty = 1;
+        retorno = 0;
+    }
+    return retorno;
+}

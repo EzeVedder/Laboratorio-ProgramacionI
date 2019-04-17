@@ -63,3 +63,8 @@ int utn_getNumber(int* pResultado,char* msg,char* msgError,int minimo,int maximo
 
     return ret;
 }
+
+
+
+
+
