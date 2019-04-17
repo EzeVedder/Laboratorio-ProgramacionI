@@ -65,7 +65,7 @@ typedef struct
 typedef struct
 {
     int isEmpty;//UN FLAG PARA USAR Y SABER SI ESTA VACIO OSEA 1 o 0 SI ESTA VACIO ES 1 SI NO ESTA VACIO 0
-    int idEmpleado;//estos dos datos van siempre.
+    int idEmpleado;//estos dos datos van siempre. HACER UN GENERADOR DE ID
     //--------------
     char nombre[50];
     char apellido[50];
@@ -83,7 +83,7 @@ int main()
     auxiliar.peso = 20.45;
     printf("%.2f\n",auxiliar.peso);
 
-    Empleado arrayEmplados[LEN_LISTA];
+    Empleado arrayEmpleados[LEN_LISTA];
 
 
 
@@ -95,6 +95,13 @@ int main()
     // Inicializo la lista de nombres
     for(i=0; i<LEN_LISTA;i++)
         nombres[i][0]='\0';
+
+    //INICIALIZANDO ARRAY DE ESTRUCTURAS
+    for(i=0; i<LEN_LISTA;i++)
+    {
+        arrayEmpleados.isEmpty[i] = 1;
+    }
+
     //_______________________________
 
     while(opcion!=5)
@@ -126,8 +133,10 @@ int main()
             case 2:
             {
                 for(i=0;i<10; i++)
+                {
                     printf("-%d: %s\n",i,nombres[i]);
-
+                    //printf("-%d:",arrayEmpleados.isEmpty[i]);
+                }
                 break;
             }
             case 4:
