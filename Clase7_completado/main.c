@@ -172,7 +172,7 @@ int main()
 int inicializarEmpleados(Empleado* pEmpleado, int TAM){
     int i;
     int retorno = -1;
-    if(TAM > 1 && pEmpleado != NULL){
+    if(TAM >= 0 && pEmpleado != NULL){
         for(i = 0; i < TAM; i++)
             pEmpleado[i].isEmpty = 1;
         retorno = 0;
