@@ -194,8 +194,8 @@ int buscarLugarLibre(Empleado* pEmpleado,int TAM,int* pIndex)
     {
         if(pEmpleado[i].isEmpty == 1)
         {
-            *pIndex = i;
-            retorno = 0;
+            //*pIndex = i; ESTO DESAPARECE PORQUE LA POSICION LA DEVUELVO EN EL RETORNO CON VALOR i
+            retorno = i;
             break;
         }
     }
