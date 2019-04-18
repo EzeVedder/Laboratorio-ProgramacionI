@@ -72,7 +72,7 @@ typedef struct
 
 }Empleado;//DECLARAR EN EMPLEADOS .H y en .C TODAS LAS FUNCIONES PARA ABM DE EMPLEADOS
 int inicializarEmpleados(Empleado* pEmpleado, int TAM);
-
+int buscarLugarLibre(Empleado* pEmpleado,int TAM,int* pIndex);
 
 int main()
 {
@@ -97,7 +97,13 @@ int main()
         nombres[i][0]='\0';
 
     //INICIALIZANDO ARRAY DE ESTRUCTURAS
-
+    int ret;
+    int lugarLibre;
+    arrayEmpleados[0].isEmpty = 0;//harcodeando valores de array
+    arrayEmpleados[1].isEmpty = 0;
+    arrayEmpleados[2].isEmpty = 0;
+    ret = buscarLugarLibre(arrayEmpleados,LEN_LISTA,&lugarLibre);
+    printf("Lugar libre (RETORNO) - %d POSICION - %d\n",ret,lugarLibre);
     //_______________________________
 
     while(opcion!=5)
@@ -165,6 +171,28 @@ int inicializarEmpleados(Empleado* pEmpleado, int TAM){
         for(i = 0; i < TAM; i++)
             pEmpleado[i].isEmpty = 1;
         retorno = 0;
+    }
+    return retorno;
+}
+
+
+
+
+
+
+int buscarLugarLibre(Empleado* pEmpleado,int TAM,int* pIndex)
+{
+    int i;
+    int retorno = -1;
+
+    for(i=0;i<TAM;i++)
+    {
+        if(pEmpleado[i].isEmpty == 1)
+        {
+            *pIndex = i;
+            retorno = 0;
+            break;
+        }
     }
     return retorno;
 }
