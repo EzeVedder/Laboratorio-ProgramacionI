@@ -1,12 +1,12 @@
 # depslib dependency file v1.0
-1556231073 source:/home/alumno/Descargas/workspace_c/Laboratorio-ProgramacionI/Clases/ABM_EZE/main.c
+1556231704 source:/home/alumno/Descargas/workspace_c/Laboratorio-ProgramacionI/Clases/ABM_EZE/main.c
 	<stdio.h>
 	<stdlib.h>
 	"utn_library.h"
 
-1556230562 /home/alumno/Descargas/workspace_c/Laboratorio-ProgramacionI/Clases/ABM_EZE/utn_library.h
+1556231735 /home/alumno/Descargas/workspace_c/Laboratorio-ProgramacionI/Clases/ABM_EZE/utn_library.h
 
-1556231351 source:/home/alumno/Descargas/workspace_c/Laboratorio-ProgramacionI/Clases/ABM_EZE/utn_library.c
+1556231755 source:/home/alumno/Descargas/workspace_c/Laboratorio-ProgramacionI/Clases/ABM_EZE/utn_library.c
 	<stdio.h>
 	<stdlib.h>
 	"utn_library.h"

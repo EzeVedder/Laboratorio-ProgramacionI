@@ -7,11 +7,11 @@
 int main()
 {
 
-    int numero;
-
-    utn_getIntNumber(&numero,"Ingrese un numero entero: ","Error. \n");
-
-    printf("\nEl numero ingresado es: %d",numero);
+    //int numero;
+    float numero;
+    //utn_getIntNumber(&numero,"Ingrese un numero entero: ","Error. \n");
+    //utn_getFloatNumber(&numero,"Ingrese un numero flotante: ","Error. \n");
+    printf("\nEl numero ingresado es: %.2f",numero);
 
 
 

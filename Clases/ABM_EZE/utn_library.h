@@ -4,7 +4,7 @@
 //BIBLIOTECA DE FUNCIONES ESENCIALES
 
 int utn_getIntNumber(int *number, char *msg,char *msgError);
-
+float utn_getFloatNumber(float *pNumber,char *msg,char *msgError);
 
 
 

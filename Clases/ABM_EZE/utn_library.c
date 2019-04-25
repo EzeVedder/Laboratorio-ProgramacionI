@@ -23,6 +23,43 @@ int utn_getIntNumber(int *pNumber,char *msg,char *msgError)
     return retorno;
 }
 
+float utn_getFloatNumber(float *pNumber,char *msg,char *msgError)
+{
+    int retorno = -1;
+    float number;
 
+    printf("%s",msg);
+    if(scanf("%f",&number)==1)
+    {
+        *(pNumber) = number;
+        retorno = 0;
+        return retorno;
+    }
+    else
+    {
+        printf("%s",msgError);
+        __fpurge(stdin);
+    }
+    return retorno;
+}
 
+int utn_getIntNumberWithRety(int *pNumber,char *msg,char *msgError)
+{
+    int retorno = -1;
+    int number;
+
+    printf("%s",msg);
+    if(scanf("%d",&number)==1)
+    {
+        *(pNumber) = number;
+        retorno = 0;
+        return retorno;
+    }
+    else
+    {
+        printf("%s",msgError);
+        __fpurge(stdin);
+    }
+    return retorno;
+}
 
