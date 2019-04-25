@@ -5,7 +5,7 @@
 
 int utn_getIntNumber(int *number, char *msg,char *msgError);
 float utn_getFloatNumber(float *pNumber,char *msg,char *msgError);
-
+int utn_getIntNumberWithRety(int *pNumber,char *msg,char *msgError,int minimo,int maximo,int retry);
 
 
 
