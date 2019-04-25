@@ -43,7 +43,7 @@ float utn_getFloatNumber(float *pNumber,char *msg,char *msgError)
     return retorno;
 }
 
-int utn_getIntNumberWithRety(int *pNumber,char *msg,char *msgError,int minimo,int maximo,int retry)
+int utn_getIntNumberWithRetry(int *pNumber,char *msg,char *msgError,int minimo,int maximo,int retry)
 {
     int retorno = -1;
     int number;
