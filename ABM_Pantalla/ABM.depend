@@ -60,3 +60,10 @@
 	"Pantalla.h"
 	"utn_strings.h"
 
+1556233182 source:/home/alumno/Descargas/workspace_c/Laboratorio-ProgramacionI/ABM_Pantalla/utn_strings.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utn_strings.h"
+	"Empleado.h"
+
