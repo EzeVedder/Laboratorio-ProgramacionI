@@ -31,8 +31,7 @@ int getString(char *pResult, char *pMsg, char *pMsgError, int min, int max, int 
     while(intentos>0)
     {
 
-  .
-  .      printf(pMsg);
+        printf(pMsg);
         //fflush( stdin ); //LIMPIA BUFFER WINDOWS
         __fpurge(stdin); //LIMPIA BUFFER LINUX
         fgets(arrayAuxiliar,sizeof(arrayAuxiliar),stdin);

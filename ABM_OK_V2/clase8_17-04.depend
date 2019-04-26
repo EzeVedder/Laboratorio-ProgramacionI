@@ -162,3 +162,19 @@
 	"empleado.h"
 	"funciones_string.h"
 
+1556145472 source:/home/alumno/Descargas/workspace_c/Laboratorio-ProgramacionI/ABM_OK_V2/Pantalla.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<string.h>
+	"funciones_string.h"
+	"empleado.h"
+
+1556237244 source:/home/alumno/Descargas/workspace_c/Laboratorio-ProgramacionI/ABM_OK_V2/funciones_string.c
+	<stdio.h>
+	<stdio_ext.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"funciones_string.h"
+
