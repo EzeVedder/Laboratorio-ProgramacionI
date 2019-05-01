@@ -4,13 +4,13 @@
 
 int main()
 {
-    int numero;
+    char cadena[20];
     int ret;
 
-    ret = utn_getNumber(&numero,"Ingrese un numero del 2 al 10: ","Error.Fuera de rango\n",2,10,3);
+    ret = utn_getString(&cadena,"Ingrese un texto: ","ERROR.");
     if(!ret)
     {
-        printf("El numero elegido es: %d",numero);
+        printf("El TEXTO elegido es: %s",cadena);
     }
 
 
