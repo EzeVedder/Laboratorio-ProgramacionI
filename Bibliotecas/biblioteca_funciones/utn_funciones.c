@@ -64,6 +64,7 @@ int utn_getInt(int* pResultado)
     return ret;
 }
 
+
 int utn_isNumeric(char* cadena)
 {
     int ret=-1;
@@ -84,3 +85,7 @@ int utn_isNumeric(char* cadena)
     }
     return ret;
 }
+
+
+
+
