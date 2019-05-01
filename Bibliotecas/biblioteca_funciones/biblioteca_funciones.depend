@@ -1,15 +1,26 @@
 # depslib dependency file v1.0
-1556744319 source:/home/eze-ubuntu/Documentos/UTN/TSP/Laboratorio-ProgramacionI/Bibliotecas/biblioteca_funciones/main.c
+1556753120 source:/home/eze-ubuntu/Documentos/UTN/TSP/Laboratorio-ProgramacionI/Bibliotecas/biblioteca_funciones/main.c
 	<stdio.h>
 	<stdlib.h>
 	"utn_funciones.h"
 
-1556729751 /home/eze-ubuntu/Documentos/UTN/TSP/Laboratorio-ProgramacionI/Bibliotecas/biblioteca_funciones/utn_funciones.h
+1556753070 /home/eze-ubuntu/Documentos/UTN/TSP/Laboratorio-ProgramacionI/Bibliotecas/biblioteca_funciones/utn_funciones.h
 
-1556729766 source:/home/eze-ubuntu/Documentos/UTN/TSP/Laboratorio-ProgramacionI/Bibliotecas/biblioteca_funciones/utn_funciones.c
+1556753107 source:/home/eze-ubuntu/Documentos/UTN/TSP/Laboratorio-ProgramacionI/Bibliotecas/biblioteca_funciones/utn_funciones.c
 	<stdio.h>
 	<stdlib.h>
 	"utn_funciones.h"
 	<stdio_ext.h>
 	<string.h>
+
+1556718335 source:/home/eze-ubuntu/Documentos/UTN/TSP/Laboratorio-ProgramacionI/ABM_Pantalla/utn_strings.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utn_strings.h"
+	"Empleado.h"
+
+1556718335 /home/eze-ubuntu/Documentos/UTN/TSP/Laboratorio-ProgramacionI/ABM_Pantalla/utn_strings.h
+
+1556718335 /home/eze-ubuntu/Documentos/UTN/TSP/Laboratorio-ProgramacionI/ABM_Pantalla/Empleado.h
 
