@@ -5,22 +5,41 @@
 #include <string.h>
 
 
-int utn_getString(char* pStr,char* msg,char* msgError)
+int utn_getString(char* pString,char* msg,char* msgError)
 {
     char bufferStr[20];
 
     printf("%s",msg);
     fgets(bufferStr,sizeof(bufferStr),stdin);
     bufferStr[strlen(bufferStr)-1] = '\0';
-    if(pStr!=NULL)
+    if(pString!=NULL)
     {
-        strncpy(pStr,bufferStr,sizeof(bufferStr));
+        strncpy(pString,bufferStr,sizeof(bufferStr));
     }
     return 0;
 }
 
+int utn_getIntWithMsg (int *pNumber, char* msg, char* msgError)
 
-int utn_getIntNumber(int* pNumber,char* msg,char*msgError,int min,int max,int retry)
+{
+    int number;
+    int ret=-1;
+    printf("%s",msg);
+    if(scanf("%d",&number)==1)
+    {
+        (*pNumber)=number;
+        ret=0;
+    }
+    else
+    {
+        printf("%s",msgError);
+        __fpurge(stdin);
+    }
+    return ret;
+}
+
+
+int utn_getIntNumberInRange(int* pNumber,char* msg,char*msgError,int min,int max,int retry)
 {
     int numero;
     int ret=-1;
@@ -182,3 +201,107 @@ int utn_isDni(char* pStr)
     }
     return 1;
 }
+
+int utn_getStringLetras (char* pString, char* msg, char* msgError)
+{
+    char bufferStr[20];
+    int ret=-1;
+    if(!utn_getString(bufferStr,msg,msgError)&&(pString!=NULL)&&(utn_isLetter(bufferStr)))
+    {
+        strncpy(pString,bufferStr,sizeof(bufferStr));
+        ret=0;
+    }
+    else
+    {
+        printf(msgError);
+    }
+    return ret;
+}
+
+int utn_isLetter (char* pString)
+{
+    int i=0;
+    while(pString[i]!='\0')
+    {
+        if((pString[i]!=' ')&&(pString[i]<'a'||pString[i]>'z')&&(pString[i]<'A'||pString[i]>'Z'))
+        {
+            return 0;
+        }
+        i++;
+    }
+    return 1;
+}
+
+int utn_getStringAlphanumeric(char* pString, char* msg, char* msgError,int retry)
+{
+    char bufferStr[20];
+    int ret=-1;
+    while(ret==-1 && retry>0)
+    {
+        if(!utn_getString(bufferStr,msg,msgError)&&(pString!=NULL)&&(utn_isAlphanumeric(bufferStr)))
+        {
+            strncpy(pString,bufferStr,20);
+            ret=0;
+        }
+        else
+        {
+            printf("%s",msgError);
+            retry--;
+        }
+    }
+    return ret;
+}
+
+int utn_isAlphanumeric (char* pString)
+{
+    int i=0;
+    while(pString[i]!='\0')
+    {
+        if((pString[i]!=' ')&&(pString[i]<'a'||pString[i]>'z')&&(pString[i]<'A'||pString[i]>'Z')
+           &&(pString[i]<'0' || pString[i]>'9'))
+        {
+            return 0;
+        }
+        i++;
+    }
+    return 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+int cargarArraySecuencialInt(int* pArray,int len,char* msg, char* msgError)
+
+{
+    int i;
+    int buffer;
+    int ret;
+    for(i=0;i<len;i++)
+    {
+        ret=utn_getIntWithMsg(&buffer,msg,msgError);
+        if(ret)
+        {
+            break;
+        }
+        *(pArray+i)=buffer;
+    }
+    return 0;
+}
+
+
+
+
+

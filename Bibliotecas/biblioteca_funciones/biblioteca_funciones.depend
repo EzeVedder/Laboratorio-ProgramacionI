@@ -1,12 +1,12 @@
 # depslib dependency file v1.0
-1556753120 source:/home/eze-ubuntu/Documentos/UTN/TSP/Laboratorio-ProgramacionI/Bibliotecas/biblioteca_funciones/main.c
+1556758727 source:/home/eze-ubuntu/Documentos/UTN/TSP/Laboratorio-ProgramacionI/Bibliotecas/biblioteca_funciones/main.c
 	<stdio.h>
 	<stdlib.h>
 	"utn_funciones.h"
 
-1556753070 /home/eze-ubuntu/Documentos/UTN/TSP/Laboratorio-ProgramacionI/Bibliotecas/biblioteca_funciones/utn_funciones.h
+1556759213 /home/eze-ubuntu/Documentos/UTN/TSP/Laboratorio-ProgramacionI/Bibliotecas/biblioteca_funciones/utn_funciones.h
 
-1556753107 source:/home/eze-ubuntu/Documentos/UTN/TSP/Laboratorio-ProgramacionI/Bibliotecas/biblioteca_funciones/utn_funciones.c
+1556759227 source:/home/eze-ubuntu/Documentos/UTN/TSP/Laboratorio-ProgramacionI/Bibliotecas/biblioteca_funciones/utn_funciones.c
 	<stdio.h>
 	<stdlib.h>
 	"utn_funciones.h"
