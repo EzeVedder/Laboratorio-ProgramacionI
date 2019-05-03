@@ -28,7 +28,8 @@ int main()
                 posLibre=pan_findFree(visores,LEN_LISTA);
                 if(posLibre>=0)
                 {
-                    printf("\n----Se encontro lugar----\n");
+                    printf("\n----Se encontro lugar en %d----\n",posLibre);
+
                     if(!pan_addPan(visores,LEN_LISTA,posLibre,"DATO NO VALIDO\n",REINTENTOS))
                     {
                         flag=1;
