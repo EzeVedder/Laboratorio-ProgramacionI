@@ -181,3 +181,39 @@
 	<string.h>
 	"utn_strings.h"
 
+1556844335 source:/home/alumno/Documentos/Laboratorio-ProgramacionI/ABM_Pantalla_4_8_F/main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utn_strings.h"
+	"Pantalla.h"
+	"Publicidad.h"
+
+1556844335 /home/alumno/Documentos/Laboratorio-ProgramacionI/ABM_Pantalla_4_8_F/utn_strings.h
+
+1556844335 /home/alumno/Documentos/Laboratorio-ProgramacionI/ABM_Pantalla_4_8_F/Pantalla.h
+
+1556844335 /home/alumno/Documentos/Laboratorio-ProgramacionI/ABM_Pantalla_4_8_F/Publicidad.h
+
+1556844335 source:/home/alumno/Documentos/Laboratorio-ProgramacionI/ABM_Pantalla_4_8_F/Pantalla.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Pantalla.h"
+	"Publicidad.h"
+	"utn_strings.h"
+
+1556844335 source:/home/alumno/Documentos/Laboratorio-ProgramacionI/ABM_Pantalla_4_8_F/Publicidad.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Pantalla.h"
+	"Publicidad.h"
+	"utn_strings.h"
+
+1556844335 source:/home/alumno/Documentos/Laboratorio-ProgramacionI/ABM_Pantalla_4_8_F/utn_strings.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utn_strings.h"
+
