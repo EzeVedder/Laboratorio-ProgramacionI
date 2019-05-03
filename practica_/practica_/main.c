@@ -29,16 +29,24 @@ int main()
 
     Pantalla pantalla[lenPant];
     int i;
-
+    int posLibre;
 
     initPantalla(pantalla,lenPant);
     for(i=0;i<lenPant;i++)
     {
         printf("ID vacio en pos %d:   %d\n",i,pantalla[i].isEmpty);
-
+        pantalla[0].isEmpty=0;
+        pantalla[1].isEmpty=0;
+        pantalla[2].isEmpty=0;
     }
-    altaPantalla(pantalla,lenPant);
+    posLibre = findEmptyPlace(pantalla,lenPant);
 
+    if(posLibre!=-1)
+    {
+        printf("Lugar en %d :",posLibre);
+    }
+    else
+        printf("No hay mas lugar");
 
 
 
