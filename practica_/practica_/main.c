@@ -93,7 +93,7 @@ int findEmptyPlace(Pantalla* pPantalla,int lenPantalla)
     int ret=-1;
     for(i=0;i<lenPantalla;i++)
     {
-        if(pPantalla[i].isEmpty==1)
+        if(pPantalla[i].isEmpty==1)//SIEMPRE HAY QUE FILTRAR EL ISEMPTY
         {
             ret=i;
             break;
