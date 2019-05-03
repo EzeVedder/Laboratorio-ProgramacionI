@@ -20,7 +20,7 @@ int pan_initPantalla(Pantalla* pPantalla,int len)
     return 0;
 }
 
-int pan_addPan(Pantalla* pPantalla,int len,int pIndex,char* msgE,int tries)//ALTA PANTALLA Y DEVUELVE LA POS LIBRE
+int pan_addPan(Pantalla* pPantalla,int len,int pIndex,char* msgE,int tries)
 {
     char bufferName[50];
     char bufferAdress[250];
@@ -31,19 +31,19 @@ int pan_addPan(Pantalla* pPantalla,int len,int pIndex,char* msgE,int tries)//ALT
     int retorno=-1;
     if((pPantalla!=NULL)&&(len>0))
     {
-        if(((getStringLetras(bufferName,"\nIngrese Nombre: ",msgE,tries)==0)&&//VALIDACIONES
+        if(((getStringLetras(bufferName,"\nIngrese Nombre: ",msgE,tries)==0)&&
             (getStringAlphanumeric(bufferAdress,"\nIngrese Direccion: ",msgE,tries)==0)))
         {
             if((getStringNumerosFloat(bufferPrecio,"\nIngrese Precio: ",msgE,tries)==0)
                 &&(getStringNumeros(bufferTipo,"\nIngrese Tipo 1(LCD) 2(LED): ",msgE,tries)==0))
             {
-                auxPrecio=atof(bufferPrecio);//CONVERTIR A VALORES NUMERICOS
-                auxTipo=atoi(bufferTipo);//CONVERTIR A VALORES NUMERICOS
+                auxPrecio=atof(bufferPrecio);
+                auxTipo=atoi(bufferTipo);
                 strncpy(pPantalla[pIndex].nombre,bufferName,sizeof(bufferName));
                 strncpy(pPantalla[pIndex].direccion,bufferAdress,sizeof(bufferAdress));
                 pPantalla[pIndex].precio=auxPrecio;
                 pPantalla[pIndex].tipo=auxTipo;
-                pPantalla[pIndex].idPantalla=generarId();//GENERA ID SUMA UNO
+                pPantalla[pIndex].idPantalla=generarId();
                 pPantalla[pIndex].isEmpty=0;
                 retorno=0;
             }
@@ -67,10 +67,10 @@ int pan_alter(Pantalla* pPantalla, int len,char* msgE,int tries)
 
     if((pPantalla!=NULL)&&(len>0))
     {
-        auxID=pan_getID(pPantalla,len,msgE,tries);//PÌDE ID PARA MODIFICAR
+        auxID=pan_getID(pPantalla,len,msgE,tries);
         if(auxID>=0)
         {
-            posOfID=pan_findPanById(pPantalla,len,auxID);//BUSCA POS POR ID
+            posOfID=pan_findPanById(pPantalla,len,auxID);
             if(posOfID!=-1)
             {
                 while(opcion!=5)
@@ -106,7 +106,7 @@ int pan_alter(Pantalla* pPantalla, int len,char* msgE,int tries)
                             if(!getStringNumerosFloat(bufferPrecio,"\nIngrese NUEVO Precio: ",msgE,tries))
                             {
                                 auxPrecio=atof(bufferPrecio);
-                                pPantalla[posOfID].precio=auxPrecio;//ARRAY DE PANTALLA QUE RECIBE LA FUNCION
+                                pPantalla[posOfID].precio=auxPrecio;
                                 retorno=0;
                             }
                             break;
@@ -230,7 +230,7 @@ int pan_printPantalla(Pantalla* pPantalla,int len)
     return 0;
 }
 
-int pan_findPanById(Pantalla* pPantalla, int len, int idE)//BUSCA POR ID LA PANTALLA
+int pan_findPanById(Pantalla* pPantalla, int len, int idE)
 {
     int i;
     int ret=-1;

@@ -15,7 +15,7 @@ int main()
     int posLibre;
     int opcion=0;
 
-    pan_initPantalla(visores,LEN_LISTA);//isEmpty en 1 libres los array
+    pan_initPantalla(visores,LEN_LISTA);
     pub_initPublicidad(Marketing,LEN_LISTA);
     while(opcion!=6)
     {
@@ -25,11 +25,11 @@ int main()
         {
             case 1:
             {
-                posLibre=pan_findFree(visores,LEN_LISTA);//BUSCA LUGAR LIBRE EN LISTA DE PANTALLA (ISEMPTY EN 1)
+                posLibre=pan_findFree(visores,LEN_LISTA);
                 if(posLibre>=0)
                 {
                     printf("\n----Se encontro lugar----\n");
-                    if(!pan_addPan(visores,LEN_LISTA,posLibre,"DATO NO VALIDO\n",REINTENTOS))//FUNCION PARA DAR DE ALTA PANTALLA
+                    if(!pan_addPan(visores,LEN_LISTA,posLibre,"DATO NO VALIDO\n",REINTENTOS))
                     {
                         flag=1;
                         printf("\n----Se dio de ALTA exitosamente!----\n");
@@ -49,7 +49,7 @@ int main()
             {
                 if(flag)
                 {
-                    if(pan_alter(visores,LEN_LISTA,"DATO NO VALIDO\n",REINTENTOS))//MODIFICACION DE PANTALLA PIDE ID DE PANTALLA
+                    if(pan_alter(visores,LEN_LISTA,"DATO NO VALIDO\n",REINTENTOS))
                     {
                         printf("\n----Se modifico exitosamente----\n");
                     }

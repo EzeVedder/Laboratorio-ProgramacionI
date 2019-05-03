@@ -181,7 +181,7 @@
 	<string.h>
 	"utn_strings.h"
 
-1556835421 source:/home/alumno/Documentos/Laboratorio-ProgramacionI/abm_nomio/ABM_Pantalla_hasta4/main.c
+1556839999 source:/home/alumno/Entregas/ABM_Pantalla_hasta4/main.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -189,13 +189,13 @@
 	"Pantalla.h"
 	"Publicidad.h"
 
-1556835421 /home/alumno/Documentos/Laboratorio-ProgramacionI/abm_nomio/ABM_Pantalla_hasta4/utn_strings.h
+1556839999 /home/alumno/Entregas/ABM_Pantalla_hasta4/utn_strings.h
 
-1556835421 /home/alumno/Documentos/Laboratorio-ProgramacionI/abm_nomio/ABM_Pantalla_hasta4/Pantalla.h
+1556839999 /home/alumno/Entregas/ABM_Pantalla_hasta4/Pantalla.h
 
-1556835421 /home/alumno/Documentos/Laboratorio-ProgramacionI/abm_nomio/ABM_Pantalla_hasta4/Publicidad.h
+1556839999 /home/alumno/Entregas/ABM_Pantalla_hasta4/Publicidad.h
 
-1556835421 source:/home/alumno/Documentos/Laboratorio-ProgramacionI/abm_nomio/ABM_Pantalla_hasta4/Pantalla.c
+1556839999 source:/home/alumno/Entregas/ABM_Pantalla_hasta4/Pantalla.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -203,7 +203,7 @@
 	"Publicidad.h"
 	"utn_strings.h"
 
-1556835421 source:/home/alumno/Documentos/Laboratorio-ProgramacionI/abm_nomio/ABM_Pantalla_hasta4/Publicidad.c
+1556839999 source:/home/alumno/Entregas/ABM_Pantalla_hasta4/Publicidad.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -211,9 +211,45 @@
 	"Publicidad.h"
 	"utn_strings.h"
 
-1556835421 source:/home/alumno/Documentos/Laboratorio-ProgramacionI/abm_nomio/ABM_Pantalla_hasta4/utn_strings.c
+1556839999 source:/home/alumno/Entregas/ABM_Pantalla_hasta4/utn_strings.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
+	"utn_strings.h"
+
+1556839999 source:/home/alumno/Documentos/Laboratorio-ProgramacionI/abm_nomio/ABM_Pantalla_hasta4/main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utn_strings.h"
+	"Pantalla.h"
+	"Publicidad.h"
+
+1556839999 /home/alumno/Documentos/Laboratorio-ProgramacionI/abm_nomio/ABM_Pantalla_hasta4/utn_strings.h
+
+1556839999 /home/alumno/Documentos/Laboratorio-ProgramacionI/abm_nomio/ABM_Pantalla_hasta4/Pantalla.h
+
+1556839999 /home/alumno/Documentos/Laboratorio-ProgramacionI/abm_nomio/ABM_Pantalla_hasta4/Publicidad.h
+
+1556839999 source:/home/alumno/Documentos/Laboratorio-ProgramacionI/abm_nomio/ABM_Pantalla_hasta4/Publicidad.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Pantalla.h"
+	"Publicidad.h"
+	"utn_strings.h"
+
+1556839999 source:/home/alumno/Documentos/Laboratorio-ProgramacionI/abm_nomio/ABM_Pantalla_hasta4/utn_strings.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utn_strings.h"
+
+1556840246 source:/home/alumno/Documentos/Laboratorio-ProgramacionI/abm_nomio/ABM_Pantalla_hasta4/Pantalla.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Pantalla.h"
+	"Publicidad.h"
 	"utn_strings.h"
 
