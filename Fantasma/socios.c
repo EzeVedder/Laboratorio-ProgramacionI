@@ -165,11 +165,11 @@ int socios_alta(Socios array[], int size, int* contadorID)                      
             array[posicion].idUnico=*contadorID;                                                       //campo ID
             array[posicion].isEmpty=0;
             utn_getUnsignedInt("\ngetUnsignedInt: ","\nError",1,sizeof(int),1,1,1,&array[posicion].varInt);           //mensaje + cambiar campo varInt
-            utn_getFloat("\ngetFloat: ","\nError",1,sizeof(float),0,1,1,&array[posicion].varFloat);             //mensaje + cambiar campo varFloat
-            utn_getName("getName\n: ","\nError",1,TEXT_SIZE,1,array[posicion].nombre);                      //mensaje + cambiar campo nombre
-            utn_getTexto("getTexto\n: ","\nError",1,TEXT_SIZE,1,array[posicion].apellido);                 //mensaje + cambiar campo apellido
-            printf("\n Posicion: %d\n ID: %d\n varInt: %d\n varFloat: %f\n nombre: %s\n apellido: %s",
-                   posicion, array[posicion].idUnico,array[posicion].varInt,array[posicion].varFloat,array[posicion].nombre,array[posicion].apellido);
+            //utn_getFloat("\ngetFloat: ","\nError",1,sizeof(float),0,1,1,&array[posicion].varFloat);             //mensaje + cambiar campo varFloat
+            utn_getName("Nombre\n: ","\nError",1,TEXT_SIZE,1,array[posicion].nombre);                      //mensaje + cambiar campo nombre
+            utn_getTexto("Apellido\n: ","\nError",1,TEXT_SIZE,1,array[posicion].apellido);                 //mensaje + cambiar campo apellido
+            printf("\n Posicion: %d\n ID: %d\n varInt: %d\n nombre: %s\n apellido: %s",
+                   posicion, array[posicion].idUnico,array[posicion].varInt,array[posicion].nombre,array[posicion].apellido);
             retorno=0;
         }
     }
