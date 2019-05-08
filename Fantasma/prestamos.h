@@ -5,12 +5,21 @@
 
 typedef struct
 {
+    int varDia;
+    int varMes;
+    int varAnio;
+
+}FechaPrestamo;
+
+typedef struct
+{
     int idUnico;
     int isEmpty;
     //-----------------
     char varString[TEXT_SIZE];
     int varInt;//codigo de libro
     int codigoSocio;//codigo de socio
+    FechaPrestamo fecha;
     //float varFloat;
     char varChar;
     char varLongString[TEXT_SIZE];

@@ -18,7 +18,7 @@ int fantasma_Inicializar(Fantasma array[], int size)                            
     int retorno=-1;
     if(array!= NULL && size>0)
     {
-        for(;size>=0;size--)
+        for(;size>0;size--)
         {
             array[size-1].isEmpty=1;
         }

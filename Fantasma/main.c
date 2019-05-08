@@ -3,16 +3,22 @@
 #include <stdlib.h>
 #include "utn.h"
 #include "libros.h" //cambiar por nombre entidad
+#include "socios.h"
+#include "autor.h"
+#include "prestamos.h"
 
 #define QTY_TIPO 3
 
 int main()
 {
     int opcion;
-    int contadorIdlibros=0;                   //cambiar
+    //int contadorIdlibros=0;                   //cambiar
+    int contadorIdSocios=0;
 
     Libros arrayLibros[QTY_TIPO];                   //cambiar
     libros_Inicializar(arrayLibros,QTY_TIPO);                   //cambiar
+    Socios arraySocios[QTY_TIPO];
+    socios_Inicializar(arraySocios,QTY_TIPO);
 
     do
     {
@@ -21,11 +27,13 @@ int main()
         switch(opcion)
         {
             case 1: //Alta
-                libros_alta(arrayLibros,QTY_TIPO,&contadorIdlibros);                   //cambiar
+                //libros_alta(arrayLibros,QTY_TIPO,&contadorIdlibros);                   //cambiar
+                socios_alta(arraySocios,QTY_TIPO,&contadorIdSocios);
                 break;
 
             case 2: //Modificar
                 libros_modificar(arrayLibros,QTY_TIPO);                   //cambiar
+                socios_modificar(arraySocios,QTY_TIPO);
                 break;
 
             case 3: //Baja
@@ -34,6 +42,7 @@ int main()
 
             case 4://Listar
                 libros_listar(arrayLibros,QTY_TIPO);                   //cambiar
+                socios_listar(arraySocios,QTY_TIPO);
                 break;
 
             case 5://Ordenar

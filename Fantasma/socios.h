@@ -5,11 +5,21 @@
 
 typedef struct
 {
+    int varDia;
+    int varMes;
+    int varAnio;
+
+}FechaAsociado;
+
+typedef struct
+{
     int idUnico;
     int isEmpty;
     //-----------------
     char nombre[TEXT_SIZE];
+    FechaAsociado fecha;
     int varInt;
+    char eMail[TEXT_SIZE];
     float varFloat;
     char varChar;
     char apellido[TEXT_SIZE];

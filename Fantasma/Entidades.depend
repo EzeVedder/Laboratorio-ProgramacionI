@@ -94,7 +94,7 @@
 
 1557343987 /home/mauro/Descargas/FANTASMA/fantasma.h
 
-1557344437 source:/home/alumno/Documentos/Laboratorio-ProgramacionI/Fantasma/fantasma.c
+1557357363 source:/home/alumno/Documentos/Laboratorio-ProgramacionI/Fantasma/fantasma.c
 	<string.h>
 	<stdio.h>
 	<stdlib.h>
@@ -112,12 +112,15 @@
 	"utn.h"
 	"fantasma.h"
 
-1557356214 source:/home/alumno/Documentos/Laboratorio-ProgramacionI/Fantasma/main.c
+1557358505 source:/home/alumno/Documentos/Laboratorio-ProgramacionI/Fantasma/main.c
 	<string.h>
 	<stdio.h>
 	<stdlib.h>
 	"utn.h"
 	"libros.h"
+	"socios.h"
+	"autor.h"
+	"prestamos.h"
 
 1557354661 /home/alumno/Documentos/Laboratorio-ProgramacionI/Fantasma/autor.h
 
@@ -127,14 +130,14 @@
 	<string.h>
 	"utn.h"
 
-1557354682 source:/home/alumno/Documentos/Laboratorio-ProgramacionI/Fantasma/autor.c
+1557357382 source:/home/alumno/Documentos/Laboratorio-ProgramacionI/Fantasma/autor.c
 	<string.h>
 	<stdio.h>
 	<stdlib.h>
 	"utn.h"
 	"autor.h"
 
-1557355116 source:/home/alumno/Documentos/Laboratorio-ProgramacionI/Fantasma/socios.c
+1557357388 source:/home/alumno/Documentos/Laboratorio-ProgramacionI/Fantasma/socios.c
 	<string.h>
 	<stdio.h>
 	<stdlib.h>
@@ -142,23 +145,23 @@
 	"socios.h"
 	"socios.h"
 
-1557355311 /home/alumno/Documentos/Laboratorio-ProgramacionI/Fantasma/socios.h
+1557357308 /home/alumno/Documentos/Laboratorio-ProgramacionI/Fantasma/socios.h
 
-1557356386 source:/home/alumno/Documentos/Laboratorio-ProgramacionI/Fantasma/libros.c
+1557357401 source:/home/alumno/Documentos/Laboratorio-ProgramacionI/Fantasma/libros.c
 	<string.h>
 	<stdio.h>
 	<stdlib.h>
 	"utn.h"
 	"libros.h"
 
-1557356686 /home/alumno/Documentos/Laboratorio-ProgramacionI/Fantasma/libros.h
+1557357308 /home/alumno/Documentos/Laboratorio-ProgramacionI/Fantasma/libros.h
 
-1557356930 source:/home/alumno/Documentos/Laboratorio-ProgramacionI/Fantasma/prestamos.c
+1557357375 source:/home/alumno/Documentos/Laboratorio-ProgramacionI/Fantasma/prestamos.c
 	<string.h>
 	<stdio.h>
 	<stdlib.h>
 	"utn.h"
 	"prestamos.h"
 
-1557356993 /home/alumno/Documentos/Laboratorio-ProgramacionI/Fantasma/prestamos.h
+1557357557 /home/alumno/Documentos/Laboratorio-ProgramacionI/Fantasma/prestamos.h
 
