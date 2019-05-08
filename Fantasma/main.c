@@ -2,19 +2,17 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "utn.h"
-#include "fantasma.h"  //cambiar por nombre entidad
-#include "autor.h"
-
+#include "libros.h" //cambiar por nombre entidad
 
 #define QTY_TIPO 3
 
 int main()
 {
     int opcion;
-    int contadorIdfantasma=0;                   //cambiar
+    int contadorIdlibros=0;                   //cambiar
 
-    Fantasma arrayFantasma[QTY_TIPO];                   //cambiar
-    fantasma_Inicializar(arrayFantasma,QTY_TIPO);                   //cambiar
+    Libros arrayLibros[QTY_TIPO];                   //cambiar
+    libros_Inicializar(arrayLibros,QTY_TIPO);                   //cambiar
 
     do
     {
@@ -23,23 +21,23 @@ int main()
         switch(opcion)
         {
             case 1: //Alta
-                fantasma_alta(arrayFantasma,QTY_TIPO,&contadorIdfantasma);                   //cambiar
+                libros_alta(arrayLibros,QTY_TIPO,&contadorIdlibros);                   //cambiar
                 break;
 
             case 2: //Modificar
-                fantasma_modificar(arrayFantasma,QTY_TIPO);                   //cambiar
+                libros_modificar(arrayLibros,QTY_TIPO);                   //cambiar
                 break;
 
             case 3: //Baja
-                fantasma_baja(arrayFantasma,QTY_TIPO);                   //cambiar
+                libros_baja(arrayLibros,QTY_TIPO);                   //cambiar
                 break;
 
             case 4://Listar
-                fantasma_listar(arrayFantasma,QTY_TIPO);                   //cambiar
+                libros_listar(arrayLibros,QTY_TIPO);                   //cambiar
                 break;
 
             case 5://Ordenar
-                fantasma_ordenarPorString(arrayFantasma,QTY_TIPO);                   //cambiar
+                libros_ordenarPorString(arrayLibros,QTY_TIPO);                   //cambiar
                 break;
 
             case 6://Salir

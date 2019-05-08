@@ -112,13 +112,12 @@
 	"utn.h"
 	"fantasma.h"
 
-1557354220 source:/home/alumno/Documentos/Laboratorio-ProgramacionI/Fantasma/main.c
+1557356214 source:/home/alumno/Documentos/Laboratorio-ProgramacionI/Fantasma/main.c
 	<string.h>
 	<stdio.h>
 	<stdlib.h>
 	"utn.h"
-	"fantasma.h"
-	"autor.h"
+	"libros.h"
 
 1557354661 /home/alumno/Documentos/Laboratorio-ProgramacionI/Fantasma/autor.h
 
@@ -145,12 +144,21 @@
 
 1557355311 /home/alumno/Documentos/Laboratorio-ProgramacionI/Fantasma/socios.h
 
-1557355743 source:/home/alumno/Documentos/Laboratorio-ProgramacionI/Fantasma/libros.c
+1557356386 source:/home/alumno/Documentos/Laboratorio-ProgramacionI/Fantasma/libros.c
 	<string.h>
 	<stdio.h>
 	<stdlib.h>
 	"utn.h"
 	"libros.h"
 
-1557355527 /home/alumno/Documentos/Laboratorio-ProgramacionI/Fantasma/libros.h
+1557356686 /home/alumno/Documentos/Laboratorio-ProgramacionI/Fantasma/libros.h
+
+1557356930 source:/home/alumno/Documentos/Laboratorio-ProgramacionI/Fantasma/prestamos.c
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	"utn.h"
+	"prestamos.h"
+
+1557356993 /home/alumno/Documentos/Laboratorio-ProgramacionI/Fantasma/prestamos.h
 
