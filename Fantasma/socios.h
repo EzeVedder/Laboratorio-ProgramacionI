@@ -22,7 +22,7 @@ typedef struct
     char eMail[TEXT_SIZE];
     float varFloat;
     char telefono[TEXT_SIZE];;
-    char varChar;
+    char sexo[2];
     char apellido[TEXT_SIZE];
 
 }Socios;
