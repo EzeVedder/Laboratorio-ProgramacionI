@@ -168,8 +168,11 @@ int socios_alta(Socios array[], int size, int* contadorID)                      
             //utn_getFloat("\ngetFloat: ","\nError",1,sizeof(float),0,1,1,&array[posicion].varFloat);             //mensaje + cambiar campo varFloat
             utn_getName("Nombre\n: ","\nError",1,TEXT_SIZE,1,array[posicion].nombre);                      //mensaje + cambiar campo nombre
             utn_getTexto("Apellido\n: ","\nError",1,TEXT_SIZE,1,array[posicion].apellido);                 //mensaje + cambiar campo apellido
-            printf("\n Posicion: %d\n ID: %d\n varInt: %d\n nombre: %s\n apellido: %s",
-                   posicion, array[posicion].idUnico,array[posicion].varInt,array[posicion].nombre,array[posicion].apellido);
+            utn_getTelefono("Telefono\n: ","\nError",8,TEXT_SIZE,1,8,1,array[posicion].telefono);
+            utn_getEmail("Email\n: ","\nError",1,TEXT_SIZE,1,array[posicion].eMail);
+
+            printf("\n Posicion: %d\n ID: %d\n varInt: %d\n nombre: %s\n apellido: %s\n telefono: %s\n email: %s" ,
+                   posicion, array[posicion].idUnico,array[posicion].varInt,array[posicion].nombre,array[posicion].apellido,array[posicion].telefono,array[posicion].eMail);
             retorno=0;
         }
     }

@@ -21,6 +21,7 @@ typedef struct
     int varInt;
     char eMail[TEXT_SIZE];
     float varFloat;
+    char telefono[TEXT_SIZE];;
     char varChar;
     char apellido[TEXT_SIZE];
 
